@@ -1,12 +1,69 @@
 body {
     background-color: black;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    height: 40px;
+    font-size: 16px;
+    color: black;
+}
+
+input[type="submit"] {
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FFC6E5;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .parallax-container {
     width: 100vh;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .parallax-item {
@@ -22,4 +79,5 @@ body {
     height: 100%;
     background: url(./img/parallax-asset-1.png) center center no-repeat;
     background-size: contain;
+    /* filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)) */
 }
