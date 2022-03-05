@@ -3,8 +3,8 @@ var parallaxContainer = document.getElementById('parallaxContainer');
 // setup output
 var output = {
     blur: {
-        start: 0.2,
-        range: 20,
+        start: 1,
+        range: 5,
     }
 }
 
@@ -34,5 +34,6 @@ for (var i = 0; i < 10; i++) {
     leaf.style.backgroundImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1158400/parallax-asset-'+bgImgNum+'.png)';
 
     // adjust blur on depth
-    item.style.filter = 'blur(20px)';
+    var blur = (depth - output.blur.start) * output.blur.range;
+    item.style.filter = 'blur('+blur+'px)';
 }
