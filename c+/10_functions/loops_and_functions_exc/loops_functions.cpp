@@ -9,6 +9,7 @@ double areaCircle(double);
 double areaSquare(double);
 double areaRectangle(double, double);
 double areaTriangle(double, double);
+bool isValid(string);
 
 int main()
 {
@@ -26,6 +27,7 @@ int main()
     {
         cout << "Do you want to continue? (y/n)" << endl;
         cin >> cont;
+        // cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }   while(cont != 'y' && cont != 'Y' && cont != 'n' && cont != 'N');
     }
     while(cont == 'y' || cont == 'Y');
@@ -49,7 +51,7 @@ void menuDecision(int choice)
     {
         case 1:
             cout << "Enter the radius: " << endl;
-            cin >> r;
+            cin >> r; 
             areaCircle(r); 
             break;
         case 2:
@@ -99,3 +101,17 @@ double areaTriangle(double b, double h)
     cout << "The area of the triangle with base " << b << " and " << "height " << h << " = " << result << endl;
     return result;
 }
+
+// bool isValid(string error_msg)
+// {
+//     if (cin.rdstate())
+//     {
+//         cin.clear();
+//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//         system("clear");
+//         initMenu();
+//         cout << error_msg << endl;
+//         return false;
+//     }   
+//     return true;
+// }
