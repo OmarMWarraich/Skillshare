@@ -1,0 +1,1 @@
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/4_simple_types/c_simple_types/target/debug/c_simple_types: /home/omar/Documents/Skillshare/rust_ultimate_crash_course/4_simple_types/c_simple_types/src/lib.rs /home/omar/Documents/Skillshare/rust_ultimate_crash_course/4_simple_types/c_simple_types/src/main.rs

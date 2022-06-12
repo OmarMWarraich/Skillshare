@@ -1,0 +1,1 @@
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/3_functions/b_functions/target/debug/b_functions: /home/omar/Documents/Skillshare/rust_ultimate_crash_course/3_functions/b_functions/src/main.rs
