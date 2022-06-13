@@ -1,0 +1,1 @@
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/6_ownership_references/ownership_references/target/debug/ownership_references: /home/omar/Documents/Skillshare/rust_ultimate_crash_course/6_ownership_references/ownership_references/src/main.rs

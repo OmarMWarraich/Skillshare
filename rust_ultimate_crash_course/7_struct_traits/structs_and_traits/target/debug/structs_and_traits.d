@@ -1,0 +1,1 @@
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/7_struct_traits/structs_and_traits/target/debug/structs_and_traits: /home/omar/Documents/Skillshare/rust_ultimate_crash_course/7_struct_traits/structs_and_traits/src/main.rs
