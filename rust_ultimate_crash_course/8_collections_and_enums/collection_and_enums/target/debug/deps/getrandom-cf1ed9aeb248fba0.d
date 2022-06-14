@@ -1,0 +1,11 @@
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/8_collections_and_enums/collection_and_enums/target/debug/deps/getrandom-cf1ed9aeb248fba0.rmeta: /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/lib.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error_impls.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util_libc.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/use_file.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/linux_android.rs
+
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/8_collections_and_enums/collection_and_enums/target/debug/deps/getrandom-cf1ed9aeb248fba0.d: /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/lib.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error_impls.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util_libc.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/use_file.rs /home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/linux_android.rs
+
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/lib.rs:
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error.rs:
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util.rs:
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/error_impls.rs:
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/util_libc.rs:
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/use_file.rs:
+/home/omar/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.7/src/linux_android.rs:

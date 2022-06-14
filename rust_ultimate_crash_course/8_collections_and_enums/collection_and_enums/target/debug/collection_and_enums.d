@@ -1,0 +1,1 @@
+/home/omar/Documents/Skillshare/rust_ultimate_crash_course/8_collections_and_enums/collection_and_enums/target/debug/collection_and_enums: /home/omar/Documents/Skillshare/rust_ultimate_crash_course/8_collections_and_enums/collection_and_enums/src/main.rs
