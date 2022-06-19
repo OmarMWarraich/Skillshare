@@ -14,19 +14,19 @@ const User: React.FC<UserInt> = ({ name, age, job, deleteUser }) => {
     <div className="card">
         <div className="row">
             <h2>Name: </h2>
-            <p>John</p>
+            <p>{name}</p>
         </div>
         <hr />
 
         <div className="row">
             <h2>Age: </h2>
-            <p>23</p>
+            <p>{age}</p>
         </div>
         <hr />
 
         <div className="row">
             <h2>Job: </h2>
-            <p>Driver</p>
+            <p>{job}</p>
         </div>
         <button className="deleteBtn" onClick={deleteUser}>Delete user</button>
     </div>
