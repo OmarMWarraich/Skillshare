@@ -1,13 +1,9 @@
 import React, {useState} from "react";
+import User, { UserInt } from "./components/User";
 import './App.css';
 
-const App: React.FC = () => {
 
-  interface UserInt {
-    name: string,
-    age: string,
-    job: string
-  }
+const App: React.FC = () => {
 
   interface AllUsersInt {
     currentUser: UserInt;
@@ -18,7 +14,8 @@ const [usersState, setUsersState] = useState<AllUsersInt> ({
       currentUser: {
       name: "",
       age: "",
-      job:""
+      job:"",
+      deleteUser: () => {}
     },
     allUsers: []
 })
@@ -40,7 +37,8 @@ const submitForm = (e: React.SyntheticEvent) : void=> {
     currentUser: {
       name: "",
       age: "",
-      job: ""
+      job: "",
+      deleteUser: () => {}
     },
     allUsers: [
       ...usersState.allUsers,
@@ -61,12 +59,13 @@ const deleteHandler = (index: number): void => {
 }
 
 const allUsers = usersState.allUsers.map((user, i) => (
-  <div key={i}>
-    <h2>{user.name}</h2>
-    <h2>{user.age}</h2>
-    <h2>{user.job}</h2>
-    <button onClick={() => deleteHandler(i)}>Delete user.</button>
-  </div>
+  <User
+    key={i} 
+    name={user.name} 
+    age={user.age} 
+    job={user.job}
+    deleteUser={() => deleteHandler(i)}
+  />
 ))
 
 console.log(usersState);
