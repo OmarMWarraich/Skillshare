@@ -71,9 +71,9 @@ const allUsers = usersState.allUsers.map((user, i) => (
 console.log(usersState);
 
   return (
-    <div className="Container">
+    <div className="container">
       <h1>React with TypeScript</h1>
-      <form onSubmit={submitForm}>
+      <form onSubmit={submitForm} className="card">
         <label htmlFor="userName">Name:</label>
         <input
           id="userName"
@@ -101,7 +101,7 @@ console.log(usersState);
           onChange = {onChangeHandler}
         />
 
-        <button type="submit">Add User</button>
+        <button type="submit" className="submitBtn">Add User</button>
       </form>
       { allUsers }
     </div>
