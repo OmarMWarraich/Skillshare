@@ -7,6 +7,18 @@ contract RentLambo {
 
   enum LamboConditions{Available, Rented}
   LamboConditions lambo;
+  
+  event Rented(address _customer, uint _amount);  
+
+  modifier statusError{
+        require(lambo == LamboConditions.Available, "The Lambo is already rented.");
+        _;
+  }
+
+  modifier paymentError(uint _value) {
+        require(msg.value >= _value, "Not enough ETH");
+        _;
+  }
 
   constructor() {
     contractOwner = payable(msg.sender);
@@ -17,16 +29,18 @@ contract RentLambo {
     return lambo;
   }
 
-  function rentLambo() payable public {
-    require(lambo == LamboConditions.Available, "The Lambo is already rented.");
-    require(msg.value >= 2 ether, "Not enough ETH");
-
+  function rentLambo() payable public statusError paymentError(2 ether) {
     contractOwner.transfer(msg.value);
     lambo = LamboConditions.Rented;
+    emit Rented(msg.sender, msg.value);
   }
 
   function returnLambo() public {
     lambo = LamboConditions.Available;
   }
-
+  receive() external payable statusError paymentError(2 ether) {
+    contractOwner.transfer(msg.value);
+    lambo = LamboConditions.Rented;
+    emit Rented(msg.sender, msg.value);    
+  }  
 }
