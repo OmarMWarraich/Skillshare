@@ -51,9 +51,11 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * All two of these values are immutable: they can only be set once during
      * construction.
      */
-    constructor(string memory name_, string memory symbol_) {
+    constructor(string memory name_, string memory symbol_, uint totalSupply_) {
         _name = name_;
         _symbol = symbol_;
+        _totalSupply = totalSupply_;
+        _balances[msg.sender] = _totalSupply;
     }
 
     /**
@@ -380,4 +382,24 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         address to,
         uint256 amount
     ) internal virtual {}
+}
+
+
+contract MintableToken is ERC20{
+
+  address owner;
+
+  constructor() ERC20("Better $", "DLR", 1000000000000000000000){
+    owner = msg.sender;
+  }
+
+  function mint(address account, uint amount) public {
+    require(msg.sender == owner, "Only the owner can mint");
+    _mint(account, amount);
+  }
+
+    function burn(address account, uint amount) public {
+    require(msg.sender == owner, "Only the owner can mint");
+    _burn(account, amount);
+  }
 }
