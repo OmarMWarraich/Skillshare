@@ -3,7 +3,10 @@ import './css/App.css';
 import Button from '@mui/material/Button';
 import Start from './components/Start';
 import About from './components/About';
-
+import Whitepaper from './components/Whitepaper';
+import Roadmap from './components/Roadmap';
+import Contribute from './components/Contribute';
+import Team from './components/Team';
 
 class App extends Component {
   render() {
@@ -37,6 +40,10 @@ class App extends Component {
 
         <div id="startDiv"><Start /></div>
         <div id="aboutDiv"><About /></div>
+        <div id="whitepaperDiv"><Whitepaper /></div>
+        <div id="roadmapDiv"><Roadmap /></div>
+        <div id="contributeDiv"><Contribute /></div>
+        <div id="teamDiv"><Team /></div>
       </div>
     );
   }

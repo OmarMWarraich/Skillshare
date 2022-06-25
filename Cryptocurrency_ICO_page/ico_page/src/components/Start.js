@@ -23,7 +23,7 @@ class Start extends Component {
               <div class="movieContainer">
                 <Player poster="https://blog.sodio.tech/wp-content/uploads/2018/03/ethex-is-decentralized2x.1551cb1c.png" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" >
                   <BigPlayButton position="center" />
-                   <ControlBar autoHide={false} disableCompletely={true} />
+                   <ControlBar autoHide={true} disableCompletely={true} />
                 </Player>
               </div>
             </div>
