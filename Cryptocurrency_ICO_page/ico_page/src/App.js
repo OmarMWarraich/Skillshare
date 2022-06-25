@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Button from '@mui/material/Button';
 import Start from './components/Start';
+import About from './components/About';
 
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
         </nav>
 
         <div id="startDiv"><Start /></div>
+        <div id="aboutDiv"><About /></div>
       </div>
     );
   }
