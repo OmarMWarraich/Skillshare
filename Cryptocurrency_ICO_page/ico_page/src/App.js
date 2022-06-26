@@ -8,12 +8,11 @@ import Roadmap from './components/Roadmap';
 import Contribute from './components/Contribute';
 import Team from './components/Team';
 import scrollToComponent from 'react-scroll-to-component';
+import web3 from './web3';
 
 class App extends Component {
-
-
-
   render() {
+    console.log("web3 is running in the browser and metamask is running.");
     return (
       <div>
         <nav>
