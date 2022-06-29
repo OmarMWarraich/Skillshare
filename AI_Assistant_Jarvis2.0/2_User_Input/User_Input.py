@@ -11,7 +11,7 @@ def speak(audioString):
     engine.runAndWait()
 
 while 1:
-    data = input("Enter your command: ")
+    data = input("Enter your command:\n")
     speak(data)
     if data == "exit":
         break
